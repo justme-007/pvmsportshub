@@ -49,10 +49,10 @@ export default function Footer() {
             Email us at
           </p>
           <a
-            href="mailto:support@pvmsporthub.com"
+            href="holuwapvm1@gmail.com"
             className="text-sm text-sky-400 hover:underline"
           >
-            support@pvmsporthub.com
+            holuwapvm1@gmail.com
           </a>
         </div>
 
@@ -65,7 +65,7 @@ export default function Footer() {
   <div className="flex items-center gap-4">
     {/* Facebook */}
     <a
-      href="#"
+      href="https://www.facebook.com/share/16sj71MDYC/?mibextid=wwXIfr"
       aria-label="Facebook"
       className="w-9 h-9 flex items-center justify-center rounded-full
                  bg-gray-800 text-gray-400
@@ -83,7 +83,7 @@ export default function Footer() {
 
     {/* Twitter */}
     <a
-      href="#"
+      href="https://x.com/oluwapelumi_pvm?s=21"
       aria-label="Twitter"
       className="w-9 h-9 flex items-center justify-center rounded-full
                  bg-gray-800 text-gray-400
@@ -101,7 +101,7 @@ export default function Footer() {
 
     {/* Instagram */}
     <a
-      href="#"
+      href="https://www.instagram.com/pvmjerseys?igsh=MTZ1a3N1dmhwd2J1cw%3D%3D&utm_source=qr"
       aria-label="Instagram"
       className="w-9 h-9 flex items-center justify-center rounded-full
                  bg-gray-800 text-gray-400
