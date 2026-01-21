@@ -14,13 +14,13 @@ export default function AboutPage() {
         </p>
 
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
-          We believe sportswear should feel as good as it looks. That’s why every
+          We believe sportswear should feel as good as it looks. That&apos;s why every
           piece we offer is carefully selected to meet high standards of quality
           and style.
         </p>
 
         <p className="text-lg text-gray-700 leading-relaxed">
-          Whether you're playing, supporting your club, or expressing your love
+          Whether you&apos;re playing, supporting your club, or expressing your love
           for the game, PVM Sports Hub is built for you.
         </p>
       </div>
