@@ -1,14 +1,18 @@
-import { sanityClient } from "@/lib/sanity/client";
-import { allProductsQuery } from "@/lib/sanity/queries";
-import { generateWhatsAppLink } from "@/lib/sanity/whatsapp";
+import { sanityClient } from "@/sanity/lib/client";
+import { allProductsQuery } from "@/sanity/lib/queries";
+import { generateWhatsAppLink } from "@/sanity/whatsapp";
 import Image from "next/image";
-import { urlFor } from "@/lib/sanity/image";
+import { urlFor } from "@/sanity/lib/image";
 
 type Product = {
   _id: string;
   title: string;
   price: number;
-  image: any;
+  image: any
+  club: {
+    name: string
+    logo: any
+  }
 };
 
 export default async function ShopPage() {
@@ -36,6 +40,22 @@ export default async function ShopPage() {
            hover:-translate-y-2 hover:shadow-xl"
 >
             <div className="relative h-48 bg-gray-100 rounded mb-4 overflow-hidden">
+
+              {/* 🔵 CLUB INFO — PASTE HERE */}
+    <div className="flex items-center gap-3 mb-3">
+      {product.club?.logo && (
+        <Image
+          src={urlFor(product.club.logo).width(40).height(40).url()}
+          alt={product.club.name}
+          width={40}
+          height={40}
+          className="rounded-full"
+        />
+      )}
+      <span className="text-sm font-medium text-gray-600">
+        {product.club?.name}
+      </span>
+    </div>
 
   {/* PRICE BADGE */}
   <span className="absolute top-2 right-2 bg-sky-500 text-white text-sm font-semibold px-3 py-1 rounded-full shadow">

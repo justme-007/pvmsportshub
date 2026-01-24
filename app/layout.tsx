@@ -15,9 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-sky-500 text-gray-900 antialiased">
+      <body className="bg-sky-500 text-gray-900 antialiased min-h-screen flex flex-col">
   <Navbar />
-  <main className="w-full overflow-x-hidden">{children}</main>
+  <main className="flex-grow">
+    {children}
+    </main>
+    
   <Footer />
   <WhatsAppButton />
 </body>

@@ -1,42 +1,49 @@
 export default function Home() {
   return (
-    <section className="relative overflow-hidden bg-sky-500">
-  <div className="max-w-7xl mx-auto px-6 py-28 text-white relative z-10">
-    <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-      Premium Sports Jerseys<br />Made for True Fans
-    </h1>
+<section className="bg-gray-50 min-h-screen py-12">
+  <div className="max-w-6xl mx-auto px-4 py-28 grid md:grid-cols-2 gap-16 items-center">
 
-    <p className="mt-6 max-w-xl text-lg text-white/90">
-      Quality football jerseys designed for comfort, confidence,
-      and style — on and off the pitch.
-    </p>
 
-    <div className="mt-8 flex gap-4">
-      <a
-        href="/shop"
-        className="bg-white text-sky-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
-      >
-        Shop Jerseys
-      </a>
+    {/* Text */}
+    <div>
+      <h1 className="text-4xl md:text-5xl max-w-xl font-semibold tracking-tight text-gray-900">
+        Built for the Game.<br />Worn with Pride.
+      </h1>
 
-      <a
-        href="/about"
-        className="border border-white/60 px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition"
-      >
-        Learn More
-      </a>
+      <p className="mt-6 max-w-xl text-lg text-gray-900 leading-relaxed">
+        Premium football jerseys designed for comfort,
+        durability, and everyday wear on and off the pitch.
+      </p>
+
+      <div className="mt-10 flex gap-4">
+        <a
+          href="/shop"
+          className="px-6 py-3 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition"
+        >
+          Shop Jerseys
+        </a>
+
+
+        <a
+          href="/clubs"
+          className="inline-block px-8 py-4 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition"
+        >
+          Explore More
+        </a>
+      </div>
     </div>
-  </div>
 
-  {/* background pattern */}
-<div
-  className="absolute inset-0 opacity-10"
-  style={{
-    backgroundImage:
-      "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-    backgroundSize: "20px 20px",
-  }}
-/>
+    {/* Image */}
+    <div>
+      <img
+        src="/images/home-hero1.jpg"
+        alt="Football jersey lifestyle"
+        className="w-full h-[380px] md:h-[420px] lg:h-[460px] object-cover rounded-xl"
+      />
+    </div>
+
+
+  </div>
 </section>
   );
 }
