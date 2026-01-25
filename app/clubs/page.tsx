@@ -1,3 +1,5 @@
+export const revalidate = 30;
+
 import { sanityClient } from "@/sanity/lib/client"
 import { allClubsQuery } from "@/sanity/lib/queries"
 import Image from "next/image"

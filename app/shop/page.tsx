@@ -1,3 +1,5 @@
+export const revalidate = 30;
+
 import { sanityClient } from "@/sanity/lib/client";
 import { allProductsQuery } from "@/sanity/lib/queries";
 import { generateWhatsAppLink } from "@/sanity/whatsapp";
