@@ -41,22 +41,6 @@ export default async function ShopPage() {
 >
             <div className="relative h-48 bg-gray-100 rounded mb-4 overflow-hidden">
 
-              {/* 🔵 CLUB INFO — PASTE HERE */}
-    <div className="flex items-center gap-3 mb-3">
-      {product.club?.logo && (
-        <Image
-          src={urlFor(product.club.logo).width(40).height(40).url()}
-          alt={product.club.name}
-          width={40}
-          height={40}
-          className="rounded-full"
-        />
-      )}
-      <span className="text-sm font-medium text-gray-600">
-        {product.club?.name}
-      </span>
-    </div>
-
   {/* PRICE BADGE */}
   <span className="absolute top-2 right-2 bg-sky-500 text-white text-sm font-semibold px-3 py-1 rounded-full shadow">
     ₦{product.price.toLocaleString()}
